@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Row } from 'react-bootstrap';
 import './App.css';
 
 const Quote = () => {
@@ -35,7 +36,7 @@ const Quote = () => {
     }
 
     return (
-        <div className='quoteWrapper'>
+        <Row xl={6} lg={6} md={6} sm={6} className='quoteWrapper'>
             <div>
                 <div className='quote'>
                     "{quote}"
@@ -48,7 +49,7 @@ const Quote = () => {
                 className='nextQuoteButton' style={{ backgroundColor: bgColor }}
                 onClick={() => { getQuotesData() }}
             >New Quote</div>
-        </div>
+        </Row>
     )
 }
 
